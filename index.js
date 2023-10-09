@@ -1,13 +1,6 @@
-const http = require('http');
-
+import app from "./app.js";
+// import port from "./config"
 const port = 3000;
-const app = express;
 
-
-const server = http.createServer((req, res) => {
-
-});
-
-server.listen(port , ()=>{
-    console.log(`Server Running on Port ${port}.`);
-}); 
+app.listen(port);
+console.log(`server on port ${port}`);
